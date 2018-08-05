@@ -10,5 +10,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="stylus">
+  div
+    width 100%
+    height 100%
 </style>

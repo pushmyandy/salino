@@ -1,10 +1,16 @@
 <template>
-    <div></div>
+    <div>
+      <first-view></first-view>
+    </div>
 </template>
 
 <script>
+import FirstView from '../firstView/firstView'
 export default {
-  name: 'main'
+  name: 'main',
+  components: {
+    FirstView
+  }
 }
 </script>
 
