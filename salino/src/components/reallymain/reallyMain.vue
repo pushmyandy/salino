@@ -9,7 +9,7 @@
     </div>
     <div class="dir">
       <ul class="dirUl">
-        <li v-for="item in content" :key = item.id class="filterContainer">
+        <li v-for="item in content" :key = item.id class="filterContainer" @click="handleLiClick(item.eng)">
           <div class="filter">
             <div class="front">{{item.mes}}</div>
             <div class="back">{{item.mes}}</div>
@@ -17,7 +17,9 @@
         </li>
       </ul>
     </div>
-    <router-view></router-view>
+    <div class="router">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -43,6 +45,9 @@ export default {
       if (res.data.ret) {
         this.content = res.data.data.content
       }
+    },
+    handleLiClick (val) {
+      this.$router.push('/main/'+val)
     }
   }
 }
@@ -170,4 +175,9 @@ export default {
               height 100%
               transform rotateY(-180deg)
               background #6dd5ed
+    .router
+      position relative
+      top 70px
+      left 520px
+      width 100%
 </style>

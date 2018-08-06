@@ -4,18 +4,22 @@
     "content": [
       {
         "id":1,
-        "mes": "萨利诺"
+        "mes": "萨利诺",
+        "eng": "salino"
       },
       {
         "id":2,
-        "mes": "笔记"
+        "mes": "笔记",
+        "eng": "tip"
       },
       {
         "id":3,
-        "mes": "科普"
+        "mes": "科普",
+        "eng": "science"
       },{
         "id":4,
-        "mes":"闲的"
+        "mes": "闲的",
+        "eng": "poo"
       }
     ]
   }
