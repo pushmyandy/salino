@@ -11,14 +11,12 @@ export default new Router({
     {
       name: 'main',
       component: Main,
-      path: '/',
-      children: [
-        {
-          name: 'realMain',
-          component: ReallyMain,
-          path: '/main'
-        }
-      ]
+      path: '/'
+    },
+    {
+      name: 'realMain',
+      component: ReallyMain,
+      path: '/main'
     }
   ]
 })

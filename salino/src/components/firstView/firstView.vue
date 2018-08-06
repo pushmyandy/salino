@@ -34,7 +34,7 @@ export default {
           (date.getSeconds() > 9 ? date.getSeconds() : '0' + date.getSeconds())
       }, 1000)
     },
-    handleClick (e) {
+    handleClick () {
       this.pull = true
       this.show = true
       setTimeout(() => {
@@ -45,9 +45,9 @@ export default {
   },
   computed: {
     greeting () {
-      if (this.time.split(':')[0] >= 13 && this.time.split(':')[0] <= 24) {
+      if (this.time.split(':')[0] >= 18 && this.time.split(':')[0] <= 24) {
         return 'good evening, let us have some drink'
-      } else if (this.time.split(':')[0] >= 11 && this.time.split(':')[0] < 13) {
+      } else if (this.time.split(':')[0] >= 11 && this.time.split(':')[0] < 18) {
         return 'i should take a little sleep'
       } else {
         return 'i miss my old friend'
@@ -69,7 +69,7 @@ export default {
       flex-direction row
       justify-content center
       align-items center
-      background url("./imgs/firstview.jpg") fixed no-repeat
+      background url("./imgs/firstview.jpg") center no-repeat
       .time
         color white
         text-align center
