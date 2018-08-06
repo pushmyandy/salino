@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '../components/main/main'
+import ReallyMain from '../components/reallymain/reallyMain'
 
 Vue.use(Router)
 
@@ -10,7 +11,14 @@ export default new Router({
     {
       name: 'main',
       component: Main,
-      path: '/'
+      path: '/',
+      children: [
+        {
+          name: 'realMain',
+          component: ReallyMain,
+          path: '/main'
+        }
+      ]
     }
   ]
 })

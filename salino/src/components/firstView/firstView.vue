@@ -1,5 +1,5 @@
 <template>
-  <div class="firstWrapper" ref="firstView">
+  <div class="firstWrapper" ref="firstView" :class="{'pullUp': pull}">
     <div style="width: 100%; height: 100%" class="firstImg">
       <div class="time">
         <p>{{time}}</p>
@@ -18,7 +18,8 @@ export default {
   data () {
     return {
       time: '',
-      show: false
+      show: false,
+      pull: false
     }
   },
   mounted () {
@@ -34,8 +35,12 @@ export default {
       }, 1000)
     },
     handleClick (e) {
-      const pullY = e.clientY
+      this.pull = true
       this.show = true
+      setTimeout(() => {
+        $('.firstWrapper').css('display', 'none')
+        this.$router.push('/main')
+      }, 450)
     }
   },
   computed: {
@@ -57,6 +62,8 @@ export default {
     width 100%
     height 100%
     position fixed
+    &.pullUp
+      animation pull .5s linear
     .firstImg
       display flex
       flex-direction row
@@ -92,4 +99,14 @@ export default {
         padding-top 5px
       100%
         padding-top 10px
+    @keyframes pull
+      0%
+        bottom 0
+        opacity 1
+      50%
+        bottom 50%
+        opacity 0.5
+      100%
+        bottom 100%
+        opacity 0
 </style>
