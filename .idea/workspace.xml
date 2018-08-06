@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65445bb4-1c9c-4fee-89d2-7515baf96a1c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/salino/src/components/salino/salino.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/static/mock/torrent.json" beforeDir="false" afterPath="$PROJECT_DIR$/salino/static/mock/torrent.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +31,12 @@
       <file leaf-file-name="reallyMain.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
-              <caret line="181" column="16" lean-forward="true" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="16" />
+            <state relative-caret-position="675">
+              <caret line="189" column="27" lean-forward="true" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
               <folding>
+                <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#1385#2199#0" />
-                <element signature="e#2215#3900#0" />
+                <element signature="e#2654#4357#0" />
               </folding>
             </state>
           </provider>
@@ -233,15 +230,16 @@
       <updated>1533463664549</updated>
       <workItem from="1533463666968" duration="1893000" />
       <workItem from="1533465694757" duration="7106000" />
-      <workItem from="1533519682108" duration="14165000" />
+      <workItem from="1533519682108" duration="15406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23164000" />
+    <option name="totallyTimeSpent" value="24405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13962065" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -406,11 +404,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="181" column="16" lean-forward="true" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="16" />
+        <state relative-caret-position="675">
+          <caret line="189" column="27" lean-forward="true" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
           <folding>
+            <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#1385#2199#0" />
-            <element signature="e#2215#3900#0" />
+            <element signature="e#2654#4357#0" />
           </folding>
         </state>
       </provider>

@@ -24,7 +24,8 @@ export default new Router({
           component: Salino,
           path: '/main/salino',
         }
-      ]
+      ],
+      redirect: '/main/salino'
     }
   ]
 })

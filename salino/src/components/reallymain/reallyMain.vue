@@ -1,25 +1,35 @@
 <template>
   <div class="main">
-    <div class="nav">
-      <ul class="navUl">
-        <li class="greeting">(◕ᴗ◕✿)我好懒啊</li>
-        <li>联系我啦</li>
-        <li>萨利诺</li>
-      </ul>
-    </div>
-    <div class="dir">
-      <ul class="dirUl">
-        <li v-for="item in content" :key = item.id class="filterContainer" @click="handleLiClick(item.eng)">
-          <div class="filter">
-            <div class="front">{{item.mes}}</div>
-            <div class="back">{{item.mes}}</div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="router">
-      <router-view></router-view>
-    </div>
+    <el-row>
+      <el-col :span="24">
+        <div class="nav">
+          <ul class="navUl">
+            <li class="greeting">(◕ᴗ◕✿)我喜欢方方的</li>
+            <li>联系我啦</li>
+            <li>萨利诺</li>
+          </ul>
+        </div>
+      </el-col>
+    </el-row>
+    <el-row style="margin: 5px" :gutter="20">
+      <el-col :span="8.8">
+        <div class="dir">
+          <ul class="dirUl">
+            <li v-for="item in content" :key = item.id class="filterContainer" @click="handleLiClick(item.eng)">
+              <div class="filter">
+                <div class="front">{{item.mes}}</div>
+                <div class="back">{{item.mes}}</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </el-col>
+      <el-col :span="15">
+        <div class="router">
+          <router-view></router-view>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -75,7 +85,7 @@ export default {
   .main
     background url("./imgs/mainBack.jpg") center no-repeat
     .nav
-      position fixed
+      position relative
       margin 5px
       border-radius 10px
       top 0
@@ -111,14 +121,14 @@ export default {
             color orange
             transition all 0.5s ease-in
     .dir
-      position fixed
-      top 70px
-      left 5px
-      width 500px
-      min-height 200px
+      width 100%
+      min-height 180px
+      position relative
+      margin 0
       box-sizing border-box
       padding 5px
       background rgba(255,255,255,0.5)
+      display inline-block
       .dirUl
         float left
         padding 0
@@ -129,7 +139,7 @@ export default {
           box-sizing border-box
           width 150px
           height 150px
-          margin 6px
+          margin 10px
           text-align center
           font-size 50px
           line-height 150px
@@ -175,9 +185,10 @@ export default {
               height 100%
               transform rotateY(-180deg)
               background #6dd5ed
+
     .router
-      position relative
-      top 70px
-      left 520px
-      width 100%
+      box-sizing border-box
+      background rgba(135,206,250,0.6)
+      padding 5px
+      height 600px
 </style>
