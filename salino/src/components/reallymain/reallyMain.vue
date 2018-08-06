@@ -4,7 +4,7 @@
       <el-col :span="24">
         <div class="nav">
           <ul class="navUl">
-            <li class="greeting">(◕ᴗ◕✿)我喜欢方方的</li>
+            <li class="greeting">{{greeting}}</li>
             <li>联系我啦</li>
             <li>萨利诺</li>
           </ul>
@@ -12,7 +12,7 @@
       </el-col>
     </el-row>
     <el-row style="margin: 5px" :gutter="20">
-      <el-col :span="8.8">
+      <el-col :span="9">
         <div class="dir">
           <ul class="dirUl">
             <li v-for="item in content" :key = item.id class="filterContainer" @click="handleLiClick(item.eng)">
@@ -22,6 +22,25 @@
               </div>
             </li>
           </ul>
+        </div>
+        <div class="form hidden-lg-and-down">
+          <el-form :model="form">
+            <el-form-item label="随便写点啥吧">
+              <el-input type="textarea" v-model="form.advice"></el-input>
+            </el-form-item>
+            <el-form-item>
+              <el-button type="primary">提交</el-button>
+              <el-button @click = "clear">取消</el-button>
+            </el-form-item>
+          </el-form>
+          <div class="mess">
+            <ul>
+              <li>
+                <div></div>
+                <div></div>
+              </li>
+            </ul>
+          </div>
         </div>
       </el-col>
       <el-col :span="15">
@@ -39,12 +58,19 @@ export default {
   name: 'reallyMain',
   data () {
     return {
-      content: []
+      content: [],
+      form: {
+        advice: ''
+      }
     }
   },
   mounted () {
-    $('.nav').addClass('navAni')
-    $('.dir').addClass('dirAni')
+    if(this.isChorme()) {
+      $('.nav').addClass('navAni')
+      $('.dir').addClass('dirAni')
+      $('.form').addClass('dirAni')
+      $('.router').addClass('contentAni')
+    }
     this.init()
   },
   methods: {
@@ -58,6 +84,23 @@ export default {
     },
     handleLiClick (val) {
       this.$router.push('/main/'+val)
+    },
+    isChorme () {
+      const USER_AGENT = navigator.userAgent.toLowerCase()
+      const isChrome = /.*(chrome)\/([\w.]+).*/
+      return isChrome.test(USER_AGENT)
+    },
+    clear () {
+      this.form = {}
+    }
+  },
+  computed: {
+    greeting () {
+      if(this.isChorme()) {
+        return '谷歌浏览器好呀'
+      } else {
+        return '试试谷歌浏览器吧'
+      }
     }
   }
 }
@@ -71,6 +114,13 @@ export default {
       top -25px
     100%
       top 0
+  @-moz-keyframes navMoveIn
+    0%
+      top -50px
+    50%
+      top -25px
+    100%
+      top 0
   @keyframes dirMoveIn
     0%
       left -500px
@@ -78,10 +128,36 @@ export default {
       left -250px
     100%
       left 5px
+  @-moz-keyframes dirMoveIn
+    0%
+      left -500px
+    50%
+      left -250px
+    100%
+      left 5px
+  @keyframes contentMoveIn
+    0%
+      right -500px
+    50%
+      right -250px
+    100%
+      right 0px
+  @-moz-keyframes contentMoveIn
+    0%
+      right -500px
+    50%
+      right -250px
+    100%
+      right 0px
   .dirAni
     animation dirMoveIn 1s linear
+    -moz-animation dirMoveIn 1s linear
   .navAni
     animation navMoveIn 1s linear
+    -moz-animation navMoveIn 1s linear
+  .contentAni
+    animation contentMoveIn 1s linear
+    -moz-animation contentMoveIn 1s linear
   .main
     background url("./imgs/mainBack.jpg") center no-repeat
     .nav
@@ -91,7 +167,7 @@ export default {
       top 0
       left 0
       right 0
-      background url("imgs/sexyBlue.jpg")
+      background url("imgs/MidnightCity.jpg")
       height 50px
       .navUl
         margin 0
@@ -127,7 +203,7 @@ export default {
       margin 0
       box-sizing border-box
       padding 5px
-      background rgba(255,255,255,0.5)
+      background rgba(65,67,69,0.5)
       display inline-block
       .dirUl
         float left
@@ -173,7 +249,7 @@ export default {
               height 100%
               transform rotateY(0deg)
               z-index 2
-              background #2193b0
+              background #232526
             .back
               position absolute
               left 0
@@ -184,11 +260,26 @@ export default {
               width 100%
               height 100%
               transform rotateY(-180deg)
-              background #6dd5ed
+              background #414345
 
-    .router
+    .form
+      position relative
       box-sizing border-box
-      background rgba(135,206,250,0.6)
+      padding 5px
+      height 400px
+      margin-top 15px
+      background rgba(105,105,105,0.6)
+      .mess
+        box-sizing border-box
+        padding 5px
+        ul
+          list-style none
+          li
+            display flex
+    .router
+      position relative
+      box-sizing border-box
+      background rgba(105,105,105,0.6)
       padding 5px
       height 600px
 </style>
