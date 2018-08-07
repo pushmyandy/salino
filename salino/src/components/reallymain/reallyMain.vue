@@ -23,13 +23,13 @@
             </li>
           </ul>
         </div>
-        <div class="form hidden-lg-and-down">
+        <div class="form ">
           <el-form :model="form">
             <el-form-item label="随便写点啥吧">
               <el-input type="textarea" v-model="form.advice"></el-input>
             </el-form-item>
             <el-form-item>
-              <el-button type="primary">提交</el-button>
+              <el-button type="primary" @click="submitMes">提交</el-button>
               <el-button @click = "clear">取消</el-button>
             </el-form-item>
           </el-form>
@@ -89,6 +89,13 @@ export default {
       const USER_AGENT = navigator.userAgent.toLowerCase()
       const isChrome = /.*(chrome)\/([\w.]+).*/
       return isChrome.test(USER_AGENT)
+    },
+    submitMes () {
+      axios.post('http://localhost:3000/submit', {
+        form: this.form
+      }).then((res) => {
+        console.log('上传成功')
+      })
     },
     clear () {
       this.form = {}
@@ -162,7 +169,7 @@ export default {
     background url("./imgs/mainBack.jpg") center no-repeat
     .nav
       position relative
-      margin 5px
+      margin 15px
       border-radius 10px
       top 0
       left 0
