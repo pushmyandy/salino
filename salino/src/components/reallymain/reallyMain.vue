@@ -49,11 +49,39 @@
         </div>
       </el-col>
     </el-row>
+    <el-row>
+      <el-col :span="24" >
+        <div class="footer">
+          <div class="music" >
+            <audio src="../../../static/ReadyForIt.mp3" id="audio" ref="music"></audio>
+            <div  class="run" @click="runMusic">
+              <span class="iconfont runSpan">&#xe64c;</span>
+            </div>
+            <div class="audio" @click="audioControl">
+              <span class="iconfont vol">&#xe64d;</span>
+            </div>
+            <div class="desc">
+              <span>RAC,St. Lucia - Ready For It</span>
+            </div>
+            <div class="time">
+              <span>{{time}}</span>
+              <span>/</span>
+              <span>{{duration}}</span>
+            </div>
+            <div class="line"></div>
+            <div class="progress" @click="progressClick">
+              <div class="inner"></div>
+            </div>
+          </div>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import {mapState, mapMutations} from 'vuex'
 export default {
   name: 'reallyMain',
   data () {
@@ -61,7 +89,8 @@ export default {
       content: [],
       form: {
         advice: ''
-      }
+      },
+      duration: '2:47'
     }
   },
   mounted () {
@@ -75,7 +104,7 @@ export default {
   },
   methods: {
     init () {
-      axios.get('/api/torrent.json').then(this.handleGet)
+      axios.get('../../static/mock/torrent.json').then(this.handleGet)
     },
     handleGet (res) {
       if (res.data.ret) {
@@ -99,7 +128,42 @@ export default {
     },
     clear () {
       this.form = {}
-    }
+    },
+    runMusic () {
+      const music = $('#audio')[0]
+      const progress = $('.inner')
+      if(music.paused) {
+        $('.runSpan').html('&#xe64a;')
+        music.play()
+        setInterval(() => {
+          const percent = ((Math.round(music.currentTime) / Math.round(music.duration))*100).toString() + '%'
+          progress.css("width", percent)
+        }, 1000)
+      } else if(music.played) {
+        $('.runSpan').html('&#xe64c;')
+        music.pause()
+      }
+    },
+    progressClick (e) {
+      const str = $('.progress').css('width')
+      let percent = (e.offsetX / str.substr(0,str.length-2))
+      const music = $('#audio')[0]
+      music.currentTime = music.duration * percent
+    },
+    audioControl () {
+      const music = $('#audio')[0]
+      if(music.volume === 1) {
+        $('.vol').css('color','yellow')
+        music.volume = 0.5
+      } else if(music.volume === 0.5) {
+        $('.vol').css('color','black')
+        music.volume = 0
+      } else {
+        $('.vol').css('color','green')
+        music.volume = 1
+      }
+    },
+    ...mapMutations(['changeTime'])
   },
   computed: {
     greeting () {
@@ -108,7 +172,8 @@ export default {
       } else {
         return '试试谷歌浏览器吧'
       }
-    }
+    },
+    ...mapState(['time'])
   }
 }
 </script>
@@ -174,7 +239,7 @@ export default {
       top 0
       left 0
       right 0
-      background url("imgs/MidnightCity.jpg")
+      background url("imgs/CoolBlues.jpg")
       height 50px
       .navUl
         margin 0
@@ -210,7 +275,7 @@ export default {
       margin 0
       box-sizing border-box
       padding 5px
-      background rgba(65,67,69,0.5)
+      background rgba(100,149,237,0.5)
       display inline-block
       .dirUl
         float left
@@ -256,7 +321,7 @@ export default {
               height 100%
               transform rotateY(0deg)
               z-index 2
-              background #232526
+              background #2193b0
             .back
               position absolute
               left 0
@@ -267,7 +332,7 @@ export default {
               width 100%
               height 100%
               transform rotateY(-180deg)
-              background #414345
+              background #6dd5ed
 
     .form
       position relative
@@ -275,7 +340,7 @@ export default {
       padding 5px
       height 400px
       margin-top 15px
-      background rgba(105,105,105,0.6)
+      background rgba(135,206,235,0.6)
       .mess
         box-sizing border-box
         padding 5px
@@ -286,7 +351,77 @@ export default {
     .router
       position relative
       box-sizing border-box
-      background rgba(105,105,105,0.6)
+      background rgba(0,191,255,0.6)
       padding 5px
       height 600px
+    .footer
+      position fixed
+      bottom 0
+      right 0
+      left 0
+      text-align right
+      color white
+      background rgba(100,149,237,0.5)
+      margin 0 15px
+      height 50px
+      .music
+        width 100%
+        height 100%
+        .run
+          margin-top 5px
+          cursor pointer
+          display inline-block
+          float left
+          height 50px
+          width 50px
+          text-align center
+          line-height 50px
+          span
+            font-size 30px
+        .audio
+          margin-top 5px
+          cursor pointer
+          display inline-block
+          float left
+          height 50px
+          width 50px
+          text-align center
+          line-height 50px
+          span
+            font-size 30px
+          .vol
+            color lightgreen
+        .desc
+          margin-top 5px
+          display inline-block
+          float left
+          height 50px
+          width 250px
+          text-align center
+          line-height 50px
+        .line
+          display inline-block
+          box-sizing border-box
+          margin 5px
+          float left
+          width 0
+          height 40px
+          border 1px solid blue
+        .time
+          margin-top 5px
+          margin-right 20px
+          display inline-block
+          float left
+          height 50px
+          width 100px
+          text-align center
+          line-height 50px
+        .progress
+          cursor pointer
+          width 100%
+          height 5px
+          .inner
+            width 0%
+            height 100%
+            border-top  3px solid coral
 </style>
