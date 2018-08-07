@@ -90,7 +90,8 @@ export default {
       form: {
         advice: ''
       },
-      duration: '2:47'
+      duration: '2:47',
+      current: '0:00'
     }
   },
   mounted () {
@@ -105,6 +106,12 @@ export default {
   methods: {
     init () {
       axios.get('../../static/mock/torrent.json').then(this.handleGet)
+      this.updateTime()
+    },
+    updateTime () {
+      setInterval(() => {
+        this.changeTime(this.current)
+      }, 1000)
     },
     handleGet (res) {
       if (res.data.ret) {
@@ -132,6 +139,21 @@ export default {
     runMusic () {
       const music = $('#audio')[0]
       const progress = $('.inner')
+      setInterval(() => {
+        if(parseInt(music.currentTime)<10){
+          this.current = '0:0' + parseInt(music.currentTime)
+        } else if (parseInt(music.currentTime)>=10 && parseInt(music.currentTime) <60) {
+          this.current = '0:' + parseInt(music.currentTime)
+        } else {
+          let min = parseInt (parseInt(music.currentTime) / 60)
+          let sec = parseInt(music.currentTime) - (60*min)
+          if(sec<10) {
+            this.current = min + ':0' + sec
+          } else {
+            this.current = min + ':' + sec
+          }
+        }
+       }, 1000)
       if(music.paused) {
         $('.runSpan').html('&#xe64a;')
         music.play()

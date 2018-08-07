@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65445bb4-1c9c-4fee-89d2-7515baf96a1c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/salino/src/components/reallymain/imgs/CoolBlues.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salino/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salino/src/store/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salino/src/store/state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salino/static/ReadyForIt.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/salino/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/salino/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/salino/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/components/reallymain/imgs/MidnightCity.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,12 +20,21 @@
       <file leaf-file-name="reallyMain.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2952">
-              <caret line="162" column="24" lean-forward="true" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+            <state relative-caret-position="614">
+              <caret line="148" column="58" lean-forward="true" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#2324#2349#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/salino/src/store/state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -274,18 +268,18 @@
       <workItem from="1533463666968" duration="1893000" />
       <workItem from="1533465694757" duration="7106000" />
       <workItem from="1533519682108" duration="19690000" />
-      <workItem from="1533621952717" duration="14979000" />
+      <workItem from="1533621952717" duration="15549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43668000" />
+    <option name="totallyTimeSpent" value="44238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10590095" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10590095" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -504,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salino/src/store/state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/store/mutations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -535,10 +522,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/salino/src/store/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2952">
-          <caret line="162" column="24" lean-forward="true" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+        <state relative-caret-position="614">
+          <caret line="148" column="58" lean-forward="true" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#2324#2349#0" expanded="true" />
