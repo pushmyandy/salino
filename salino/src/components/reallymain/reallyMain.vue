@@ -35,9 +35,10 @@
           </el-form>
           <div class="mess">
             <ul>
-              <li>
-                <div></div>
-                <div></div>
+              <li v-for="item in advice">
+                <span class="iconfont" style="font-size: 20px">&#xe6ff;</span>
+                <span style="margin-left: 5px">{{item.message}}</span>
+                <span style="float: right; font-size: 10px; margin-right: 5px">{{item.time}}</span>
               </li>
             </ul>
           </div>
@@ -91,7 +92,8 @@ export default {
         data: ''
       },
       duration: '2:47',
-      current: '0:00'
+      current: '0:00',
+      advice: []
     }
   },
   mounted () {
@@ -106,6 +108,7 @@ export default {
   methods: {
     init () {
       axios.get('../../static/mock/torrent.json').then(this.handleGet)
+      axios.get('http://localhost:3000/getMes').then(this.handleGet)
       this.updateTime()
     },
     updateTime () {
@@ -116,6 +119,9 @@ export default {
     handleGet (res) {
       if (res.data.ret) {
         this.content = res.data.data.content
+      } else {
+        this.advice = res.data
+        console.log(this.advice)
       }
     },
     handleLiClick (val) {
@@ -370,12 +376,23 @@ export default {
       margin-top 15px
       background rgba(135,206,235,0.6)
       .mess
+        height 200px
         box-sizing border-box
         padding 5px
+        overflow auto
         ul
+          margin 0
+          padding 0
+          display block
+          width 100%
+          height 100%
           list-style none
           li
-            display flex
+            display block
+            line-height 40px
+            color whitesmoke
+            font-size 20px
+            height 40px
     .router
       position relative
       box-sizing border-box

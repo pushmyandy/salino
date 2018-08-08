@@ -6,6 +6,11 @@
       <change beforePath="$PROJECT_DIR$/back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/server/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/server/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/server/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/server/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +28,12 @@
       <file leaf-file-name="reallyMain.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+            <state relative-caret-position="192">
+              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,8 +42,8 @@
       <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/server/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="672">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -45,8 +51,8 @@
       <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/server/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="288">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -54,8 +60,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="528">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -87,16 +93,16 @@
         <option value="$PROJECT_DIR$/salino/static/mock/torrent.json" />
         <option value="$PROJECT_DIR$/salino/src/router/index.js" />
         <option value="$PROJECT_DIR$/back/server/router.js.css" />
-        <option value="$PROJECT_DIR$/salino/src/assets/font/iconfont.css" />
         <option value="$PROJECT_DIR$/salino/src/main.js" />
         <option value="$PROJECT_DIR$/salino/src/store/index.js" />
         <option value="$PROJECT_DIR$/salino/src/store/mutations.js" />
         <option value="$PROJECT_DIR$/salino/src/store/state.js" />
         <option value="$PROJECT_DIR$/salino/config/index.js" />
         <option value="$PROJECT_DIR$/back/server/settings.js" />
-        <option value="$PROJECT_DIR$/back/app.js" />
         <option value="$PROJECT_DIR$/back/server/router.js" />
         <option value="$PROJECT_DIR$/back/server/db.js" />
+        <option value="$PROJECT_DIR$/back/app.js" />
+        <option value="$PROJECT_DIR$/salino/src/assets/font/iconfont.css" />
         <option value="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" />
       </list>
     </option>
@@ -121,10 +127,10 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/salino/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="458" />
-    <option name="y" value="296" />
-    <option name="width" value="1153" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="9" />
+    <option name="y" value="9" />
+    <option name="width" value="1270" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -180,6 +186,23 @@
               <item name="salino" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salino" type="462c0819:PsiDirectoryNode" />
+              <item name="salino" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="font" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salino" type="462c0819:PsiDirectoryNode" />
+              <item name="salino" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="font" type="462c0819:PsiDirectoryNode" />
+              <item name="iconfont" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="salino" type="b2602c69:ProjectViewProjectNode" />
@@ -250,7 +273,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/EJblog-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -299,25 +322,26 @@
       <workItem from="1533621952717" duration="16052000" />
       <workItem from="1533690840963" duration="9284000" />
       <workItem from="1533703149748" duration="1066000" />
-      <workItem from="1533705810040" duration="1851000" />
+      <workItem from="1533705810040" duration="2670000" />
+      <workItem from="1533708519547" duration="549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56942000" />
+    <option name="totallyTimeSpent" value="58310000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="458" y="296" width="1153" height="1047" extended-state="0" />
+    <frame x="743" y="16" width="1153" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18116592" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22600897" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3293348" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28744492" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28382838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -341,6 +365,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/back/server/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3072">
@@ -348,6 +386,7 @@
           <folding>
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -387,6 +426,7 @@
           <folding>
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -419,6 +459,7 @@
           <folding>
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,6 +485,7 @@
           <folding>
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -539,13 +581,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/assets/font/iconfont/iconfont.css" />
-    <entry file="file://$PROJECT_DIR$/salino/src/assets/font/iconfont.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/salino/static/mock/torrent.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -628,34 +663,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/app.js">
+    <entry file="file://$PROJECT_DIR$/back/server/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="672">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/back/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="288">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/server/db.js">
+    <entry file="file://$PROJECT_DIR$/salino/src/assets/font/iconfont.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="144">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+        <state relative-caret-position="192">
+          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

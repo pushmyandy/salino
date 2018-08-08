@@ -8,3 +8,7 @@ exports.subMes = function (req, res) {
     db.insertOne(data)
     res.send()
 }
+
+exports.getMes = function (req, res) {
+    db.getData(res)
+}
