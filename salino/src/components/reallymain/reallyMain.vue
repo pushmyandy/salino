@@ -121,7 +121,6 @@ export default {
         this.content = res.data.data.content
       } else {
         this.advice = res.data
-        console.log(this.advice)
       }
     },
     handleLiClick (val) {
@@ -142,6 +141,8 @@ export default {
         "message": this.form.data,
         "time": time
       }).then((res) => {
+        this.form.data=''
+        this.init()
         console.log('上传成功')
       })
     },
