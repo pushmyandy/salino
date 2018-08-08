@@ -1,5 +1,7 @@
 <template>
-    <div>im salino</div>
+    <div>
+      <p></p>
+    </div>
 </template>
 
 <script>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65445bb4-1c9c-4fee-89d2-7515baf96a1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salino/src/components/salino/salino.vue" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/components/salino/salino.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,45 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="reallyMain.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
+      <file leaf-file-name="salino.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/salino/src/components/salino/salino.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="953">
-              <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#2;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/server/db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/server/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="48">
+              <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -82,7 +48,6 @@
         <option value="$PROJECT_DIR$/salino/src/App.vue" />
         <option value="$PROJECT_DIR$/salino/src/components/main/main.vue" />
         <option value="$PROJECT_DIR$/salino/src/components/firstView/firstView.vue" />
-        <option value="$PROJECT_DIR$/salino/src/components/salino/salino.vue" />
         <option value="$PROJECT_DIR$/salino/static/mock/torrent.json" />
         <option value="$PROJECT_DIR$/salino/src/router/index.js" />
         <option value="$PROJECT_DIR$/back/server/router.js.css" />
@@ -97,6 +62,7 @@
         <option value="$PROJECT_DIR$/back/app.js" />
         <option value="$PROJECT_DIR$/salino/src/assets/font/iconfont.css" />
         <option value="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" />
+        <option value="$PROJECT_DIR$/salino/src/components/salino/salino.vue" />
       </list>
     </option>
   </component>
@@ -120,7 +86,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/salino/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="707" />
     <option name="y" value="87" />
     <option name="width" value="1153" />
@@ -242,6 +208,14 @@
               <item name="salino" type="462c0819:PsiDirectoryNode" />
               <item name="salino" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="salino" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salino" type="462c0819:PsiDirectoryNode" />
+              <item name="salino" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,18 +290,18 @@
       <workItem from="1533690840963" duration="9284000" />
       <workItem from="1533703149748" duration="1066000" />
       <workItem from="1533705810040" duration="2670000" />
-      <workItem from="1533708519547" duration="1073000" />
+      <workItem from="1533708519547" duration="1315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58834000" />
+    <option name="totallyTimeSpent" value="59076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13277134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1406744" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -544,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salino/src/components/salino/salino.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/components/firstView/imgs/firstview.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -664,9 +631,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/salino/src/assets/font/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back/server/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
+        <state relative-caret-position="594">
           <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
@@ -678,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salino/src/assets/font/iconfont.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -692,17 +673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
+    <entry file="file://$PROJECT_DIR$/salino/src/components/salino/salino.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="953">
-          <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
         </state>
       </provider>
     </entry>
