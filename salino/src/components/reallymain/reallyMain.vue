@@ -26,7 +26,7 @@
         <div class="form ">
           <el-form :model="form">
             <el-form-item label="随便写点啥吧">
-              <el-input type="textarea" v-model="form.advice"></el-input>
+              <el-input type="textarea" v-model="form.data"></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="submitMes">提交</el-button>
@@ -88,7 +88,7 @@ export default {
     return {
       content: [],
       form: {
-        advice: ''
+        data: ''
       },
       duration: '2:47',
       current: '0:00'
@@ -127,8 +127,8 @@ export default {
       return isChrome.test(USER_AGENT)
     },
     submitMes () {
-      axios.post('http://localhost:3000/submit', {
-        form: this.form
+      axios.post('http://localhost:3000/subMes', {
+        message: this.form
       }).then((res) => {
         console.log('上传成功')
       })
