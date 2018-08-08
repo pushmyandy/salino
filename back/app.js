@@ -1,8 +1,15 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 const fs = require('fs')
 const path = require('path')
 const router = require('./server/router')
+
+let jsonParser = bodyParser.json()
+let urlencodedParser = bodyParser.urlencoded({ extended: true })
+
+app.use(jsonParser)
+app.use(urlencodedParser)
 
 app.all('*', function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");

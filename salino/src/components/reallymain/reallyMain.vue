@@ -26,7 +26,7 @@
         <div class="form ">
           <el-form :model="form">
             <el-form-item label="随便写点啥吧">
-              <el-input type="textarea" v-model="form.data"></el-input>
+              <el-input type="textarea" v-model="form.data" style="font-size: 20px"></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="submitMes">提交</el-button>
@@ -127,8 +127,14 @@ export default {
       return isChrome.test(USER_AGENT)
     },
     submitMes () {
+      let date = new Date()
+      const year = date.getFullYear()
+      const month = (date.getMonth()+1) < 10 ? '0'+(date.getMonth()+1) : (date.getMonth()+1)
+      const day = date.getDate()
+      let time = year + '-' + month + '-' + day
       axios.post('http://localhost:3000/subMes', {
-        message: this.form
+        "message": this.form.data,
+        "time": time
       }).then((res) => {
         console.log('上传成功')
       })

@@ -4,7 +4,7 @@ let url = "mongodb://localhost:27017/blog"
 function _connectDB(callback) {
     Mongo.connect(url, function (err, db) {
         if(err) {
-            callback(err,null)
+            throw err
             return
         }
         callback(err, db)
@@ -13,7 +13,8 @@ function _connectDB(callback) {
 
 exports.insertOne = function (data) {
     _connectDB(function (err, db) {
-        db.collection("blog").insertOne(data, function (err, res) {
+        let dbo = db.db('blog')
+        dbo.collection("blog").insertOne(data, function (err, res) {
             if(err) throw err
             console.log('插入成功')
             db.close()

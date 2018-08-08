@@ -4,7 +4,7 @@ let fs = require("fs")
 let MongoClient = require('mongodb').MongoClient
 
 exports.subMes = function (req, res) {
-    const data = req.body.message
+    const data = req.body
     db.insertOne(data)
     res.send()
 }
