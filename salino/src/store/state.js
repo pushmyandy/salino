@@ -1,3 +1,4 @@
 export default {
-  time: '0:00'
+  time: '0:00',
+  admin: false
 }

@@ -6,7 +6,7 @@
           <ul class="navUl">
             <li class="greeting">{{greeting}}</li>
             <li>联系我啦</li>
-            <li>萨利诺</li>
+            <li @click="isAdmin">我是管理员</li>
           </ul>
         </div>
       </el-col>
@@ -106,6 +106,25 @@ export default {
     this.init()
   },
   methods: {
+    isAdmin () {
+      this.$prompt('输入密码', '验证', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        inputPattern: /^caldey$/,
+        inputErrorMessage: '密码不正确'
+      }).then(({ value }) => {
+        this.$message({
+          type: 'success',
+          message: '回答正确'
+        })
+        this.admin = true
+      }).catch(() => {
+        this.$message({
+          type: 'info',
+          message: '取消输入'
+        });
+      });
+    },
     init () {
       axios.get('../../static/mock/torrent.json').then(this.handleGet)
       axios.get('http://localhost:3000/getMes').then(this.handleGet)
@@ -208,7 +227,8 @@ export default {
         return '试试谷歌浏览器吧'
       }
     },
-    ...mapState(['time'])
+    ...mapState(['time']),
+    ...mapState(['admin'])
   }
 }
 </script>
