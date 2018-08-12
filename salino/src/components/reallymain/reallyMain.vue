@@ -121,7 +121,6 @@ export default {
         axios.post('http://localhost:3000/login', {
           'name': value
         }).then(()=>{
-          console.log('login success')
           this.changeAdmin(true)
           this.initLogin()
         }).catch((e)=>{
@@ -146,6 +145,7 @@ export default {
         $('.isadmin').on('click', () => {
           axios.get('http://localhost:3000/logout').then(()=>{
             console.log('登出成功')
+            this.$router.push('/')
           })
         })
       }

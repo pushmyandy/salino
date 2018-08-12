@@ -41,8 +41,8 @@ exports.login = function (req, res) {
 exports.logout = function (req, res) {
     req.session.destroy((err) => {
         if (err) throw err
-
         res.clearCookie(identifyKey)
-        res.redirect('/')
+        console.log('logout success')
     })
+    res.send()
 }
