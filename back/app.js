@@ -1,13 +1,12 @@
 const express = require('express')
 const session = require('express-session')
-const filestore = require('nedb-file-store')(session)
 const bodyParser = require('body-parser')
 const app = express()
 const fs = require('fs')
 const path = require('path')
 const router = require('./server/router')
 
-let identifyKey = 'key'
+let identifyKey = 'skey'
 
 let jsonParser = bodyParser.json()
 let urlencodedParser = bodyParser.urlencoded({ extended: true })
@@ -18,9 +17,8 @@ app.use(urlencodedParser)
 app.use(session({
     name: identifyKey,
     secret: 'caldey',
-    store: new filestore(),
     saveUninitialized: false, // 是否保存未初始化的会话
-    resave: false, // 是否每次重新保存会话,
+    resave: false, // 是否每次重新保存会话
     cookie: {
         maxAge: 10 * 1000
     }

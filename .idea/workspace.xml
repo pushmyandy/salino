@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65445bb4-1c9c-4fee-89d2-7515baf96a1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/server/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/server/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salino/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/salino/src/store/mutations.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="reallyMain.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+            <state relative-caret-position="372">
+              <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -33,7 +30,6 @@
                 <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#2711#2736#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,17 +38,17 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+            <state relative-caret-position="192">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mutations.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/salino/src/store/mutations.js">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/server/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="367">
+              <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -92,9 +88,9 @@
         <option value="$PROJECT_DIR$/salino/src/components/salino/salino.vue" />
         <option value="$PROJECT_DIR$/salino/src/store/state.js" />
         <option value="$PROJECT_DIR$/back/server/admin.js" />
-        <option value="$PROJECT_DIR$/back/server/router.js" />
-        <option value="$PROJECT_DIR$/back/app.js" />
         <option value="$PROJECT_DIR$/salino/src/store/mutations.js" />
+        <option value="$PROJECT_DIR$/back/app.js" />
+        <option value="$PROJECT_DIR$/back/server/router.js" />
         <option value="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" />
       </list>
     </option>
@@ -119,9 +115,9 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/salino/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="794" />
-    <option name="y" value="-18" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="388" />
+    <option name="y" value="7" />
     <option name="width" value="1314" />
     <option name="height" value="1032" />
   </component>
@@ -327,25 +323,25 @@
       <workItem from="1533783648809" duration="3382000" />
       <workItem from="1533860404397" duration="619000" />
       <workItem from="1533864548308" duration="2448000" />
-      <workItem from="1534039717539" duration="2876000" />
+      <workItem from="1534039717539" duration="3714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69242000" />
+    <option name="totallyTimeSpent" value="70080000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="876" y="18" width="1314" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1406744" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20924765" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3293348" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28353328" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2911534" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -668,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/server/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -689,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/store/mutations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -703,10 +685,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/server/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+        <state relative-caret-position="372">
+          <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -714,7 +710,6 @@
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#li#0;n#ul#0;n#div#0;n#div#1;n#el-col#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2711#2736#0" expanded="true" />
           </folding>
         </state>
       </provider>

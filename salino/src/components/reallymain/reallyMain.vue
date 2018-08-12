@@ -118,9 +118,15 @@ export default {
           type: 'success',
           message: '回答正确'
         })
-        this.changeAdmin(true)
-        console.log(this.admin)
-        this.initLogin()
+        axios.post('http://localhost:3000/login', {
+          'name': value
+        }).then(()=>{
+          console.log('login success')
+          this.changeAdmin(true)
+          this.initLogin()
+        }).catch((e)=>{
+          console.log(e)
+        })
       }).catch(() => {
         this.$message({
           type: 'info',
@@ -138,7 +144,9 @@ export default {
         $('.admin').css('display','none')
         $('.isadmin').css('display', 'block')
         $('.isadmin').on('click', () => {
-          this.$router.push('/')
+          axios.get('http://localhost:3000/logout').then(()=>{
+            console.log('登出成功')
+          })
         })
       }
     },

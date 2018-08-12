@@ -4,6 +4,8 @@ let fs = require("fs")
 let MongoClient = require('mongodb').MongoClient
 let user = require('./admin').items
 
+let identifyKey = 'skey'
+
 let findUser = function(name) {
     return user.find( (item) => {
         return item.name === name
@@ -27,17 +29,17 @@ exports.login = function (req, res) {
     if(user) {
         session.regenerate((err) => {
             if(err) throw err
-            
             req.session.loginUser = user.name
-            res.send('login success')
+            console.log('login receive')
+            res.send()
         })
     }else{
-        res.send('error username')
+        console.log('login error')
     }
 }
 
 exports.logout = function (req, res) {
-    req.session.destory((err) => {
+    req.session.destroy((err) => {
         if (err) throw err
 
         res.clearCookie(identifyKey)
