@@ -46,3 +46,11 @@ exports.logout = function (req, res) {
     })
     res.send()
 }
+
+exports.isLogin = function (req, res) { // 判断是否登录
+    let session = req.session
+    let user = session.loginUser
+    let isLogin = !!user
+
+    res.send(isLogin)
+}

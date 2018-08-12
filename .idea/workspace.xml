@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65445bb4-1c9c-4fee-89d2-7515baf96a1c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/server/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/server/router.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="reallyMain.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="146" column="47" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
+            <state relative-caret-position="372">
+              <caret line="150" column="7" lean-forward="true" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="408">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -45,8 +46,8 @@
       <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/server/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="535">
+              <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -87,8 +88,8 @@
         <option value="$PROJECT_DIR$/salino/src/store/state.js" />
         <option value="$PROJECT_DIR$/back/server/admin.js" />
         <option value="$PROJECT_DIR$/salino/src/store/mutations.js" />
-        <option value="$PROJECT_DIR$/back/app.js" />
         <option value="$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue" />
+        <option value="$PROJECT_DIR$/back/app.js" />
         <option value="$PROJECT_DIR$/back/server/router.js" />
       </list>
     </option>
@@ -114,8 +115,8 @@
     <dismissed value="$PROJECT_DIR$/salino/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="388" />
-    <option name="y" value="7" />
+    <option name="x" value="644" />
+    <option name="y" value="18" />
     <option name="width" value="1314" />
     <option name="height" value="1032" />
   </component>
@@ -321,15 +322,16 @@
       <workItem from="1533783648809" duration="3382000" />
       <workItem from="1533860404397" duration="619000" />
       <workItem from="1533864548308" duration="2448000" />
-      <workItem from="1534039717539" duration="4030000" />
+      <workItem from="1534039717539" duration="4298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70396000" />
+    <option name="totallyTimeSpent" value="70664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="388" y="7" width="1314" height="1032" extended-state="0" />
+    <frame x="644" y="18" width="1314" height="1032" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20924765" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -682,17 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/salino/src/components/reallymain/reallyMain.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="146" column="47" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
+        <state relative-caret-position="372">
+          <caret line="150" column="7" lean-forward="true" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-row#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -704,10 +699,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="535">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
         </state>
       </provider>
     </entry>

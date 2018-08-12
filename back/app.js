@@ -36,6 +36,7 @@ app.get('/getMes', router.getMes)
 app.post('/subMes', router.subMes)
 app.post('/login', router.login)
 app.get('/logout', router.logout)
+app.get('/isLogin', router.isLogin)
 
 app.listen(3000, function () {
     console.log('访问地址为 localhost:3000')
