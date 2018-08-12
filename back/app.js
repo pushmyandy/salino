@@ -7,11 +7,24 @@ const fs = require('fs')
 const path = require('path')
 const router = require('./server/router')
 
+let identifyKey = 'key'
+
 let jsonParser = bodyParser.json()
 let urlencodedParser = bodyParser.urlencoded({ extended: true })
 
 app.use(jsonParser)
 app.use(urlencodedParser)
+
+app.use(session({
+    name: identifyKey,
+    secret: 'admin',
+    store: new filestore(),
+    saveUninitialized: false, // 是否保存未初始化的会话
+    resave: false, // 是否每次重新保存会话,
+    cookie: {
+        maxAge: 10 * 1000
+    }
+}))
 
 app.all('*', function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
