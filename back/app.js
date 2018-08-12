@@ -1,6 +1,6 @@
 const express = require('express')
 const session = require('express-session')
-const filestore = require('session-file-store')
+const filestore = require('nedb-file-store')(session)
 const bodyParser = require('body-parser')
 const app = express()
 const fs = require('fs')

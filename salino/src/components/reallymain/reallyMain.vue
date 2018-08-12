@@ -6,7 +6,8 @@
           <ul class="navUl">
             <li class="greeting">{{greeting}}</li>
             <li>联系我啦</li>
-            <li @click="isAdmin">我是管理员</li>
+            <li @click="isAdmin" class="admin">登入</li>
+            <li class="isadmin" style="display: none">登出</li>
           </ul>
         </div>
       </el-col>
@@ -117,18 +118,29 @@ export default {
           type: 'success',
           message: '回答正确'
         })
-        this.admin = true
+        this.changeAdmin(true)
+        console.log(this.admin)
+        this.initLogin()
       }).catch(() => {
         this.$message({
           type: 'info',
           message: '取消输入'
         });
-      });
+      })
     },
     init () {
       axios.get('../../static/mock/torrent.json').then(this.handleGet)
       axios.get('http://localhost:3000/getMes').then(this.handleGet)
       this.updateTime()
+    },
+    initLogin () {
+      if(this.admin) {
+        $('.admin').css('display','none')
+        $('.isadmin').css('display', 'block')
+        $('.isadmin').on('click', () => {
+          this.$router.push('/')
+        })
+      }
     },
     updateTime () {
       setInterval(() => {
@@ -217,7 +229,7 @@ export default {
         music.volume = 1
       }
     },
-    ...mapMutations(['changeTime'])
+    ...mapMutations(['changeTime', 'changeAdmin'])
   },
   computed: {
     greeting () {
