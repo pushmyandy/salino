@@ -17,7 +17,7 @@ app.use(urlencodedParser)
 
 app.use(session({
     name: identifyKey,
-    secret: 'admin',
+    secret: 'caldey',
     store: new filestore(),
     saveUninitialized: false, // 是否保存未初始化的会话
     resave: false, // 是否每次重新保存会话,
@@ -34,8 +34,10 @@ app.all('*', function (req, res, next) {
     res.header("Content-Type", "application/json;charset=utf-8");
     next();
 })
-app.get('/getMes',router.getMes)
-app.post('/subMes',router.subMes)
+app.get('/getMes', router.getMes)
+app.post('/subMes', router.subMes)
+app.post('/login', router.login)
+app.get('/logout', router.logout)
 
 app.listen(3000, function () {
     console.log('访问地址为 localhost:3000')
