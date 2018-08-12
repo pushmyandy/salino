@@ -21,5 +21,26 @@ exports.getMes = function (req, res) {
 }
 
 exports.login = function (req, res) {
+    let session = req.session
+    let user = findUser(req.body.name)
+    
+    if(user) {
+        session.regenerate((err) => {
+            if(err) throw err
+            
+            req.session.loginUser = user.name
+            res.send('login success')
+        })
+    }else{
+        res.send('error username')
+    }
+}
 
+exports.logout = function (req, res) {
+    req.session.destory((err) => {
+        if (err) throw err
+
+        res.clearCookie(identifyKey)
+        res.redirect('/')
+    })
 }
